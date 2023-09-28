@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrito de compras: Register page</title>
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./register.css">
+</head>
+<body>
+  <main class="main">
+    <nav class="nav">
+      <div class="nav-absolute">
+        <div class="nav-items">
+          <ul class="nav-item">
+            <li class="nav-item-menu" style="display: flex; align-items: center; gap: .5rem;">
+              <i class="fa-solid fa-bars-staggered fa-xl"></i>
+              <a href="../../index.html">Category</a>
+            </li>
+          </ul>
+
+          <div class="address">
+            <i class="fa-solid fa-truck-fast fa-xl"></i>
+
+            <a href="#" class="cta cta-address">Simulate sent</a>
+          </div>
+
+          <div class="userSession address" style="margin-left: 0;">
+            <i class="fa-regular fa-user fa-xl"></i>
+            <a href="#" class="cta cta-userSession">Register</a>
+          </div>
+
+          <div class="cart">
+            <p class="cart-content" data-content="0">0</p>
+
+            <a href="#" class="cart-icon">
+              <i class="fa-solid fa-bag-shopping fa-xl"></i>
+            </a>
+          </div>
+          
+          <div class="cart-items">
+            <table class="cart-table">
+              <thead class="cart-head">
+                <tr>
+                  <th>
+                    <h2>Cart</h2>
+                  </th>
+                  <th>
+                    <a href="#" class="cart-close">
+                      <i class="fa-solid fa-xmark fa-xl"></i>
+                    </a>
+                  </th>
+                </tr>
+              </thead>
+              <tbody class="cart-render">
+                <tr>
+                  <th>
+                    <h3>Your cart is empty</h3>
+                    <div class="cart-empty">
+                      <i class="fa-solid fa-basket-shopping"></i>
+                      <a href="#" class="btn btn-cart-empty">Go shopping!</a>
+                    </div>
+                  </th>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr class="buttons-cart">
+                  <td>
+                    <a href="#" class="btn btn-cart delete">Vaciar carrito</a>
+                  </td>
+                  <td>
+                    <a href="./html/boleta.html" class="btn btn-cart post">Terminar la compra</a>
+                  </td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <header class="header">
+      <p>
+        <a href="#">Shopping cart</a>/
+        <a href="#" style="color: royalblue;">Create account</a>
+      </p>
+    </header>
+    <main class="main-body">
+      <div class="user-items">
+        <form class="user">
+          <div class="header-user">
+            <i class="fa-solid fa-user fa-xl"></i>
+            <h3>Create account</h3>
+          </div>
+          <div class="body-user">
+            <div class="user-name">
+              <label>
+                User :
+              </label>
+              <input type="text" name="userName" id="userName" placeholder="User name" autocomplete="name"/>
+            </div>
+            <div class="user-password">
+              <label>
+                Password :
+              </label>
+              <input type="password" name="userPassword" id="userPassword" placeholder="******" autocomplete="on"/>
+            </div>
+            <div class="user-email">
+              <label>
+                Email :
+              </label>
+              <input type="email" name="userEmail" id="userEmail" placeholder="Email@example.com"/>
+            </div>
+            <div class="user-policies" style="display: flex; align-items: center; gap: 1rem; justify-content: center; margin-top: 1.5rem;">
+              <label class="label-policies" style="margin: 0;">
+                You accept our <a href="#" class="policies" style="color: #202020;">policies.</a>
+              </label>
+              <input type="checkbox" name="checkPolitice" style="width: min-content;">
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-createUser">Create User</button>
+        </form>
+        <div class="user-login">
+          <p class="login-text">
+            Do you have an account? <a href="#" class="login">Sign in</a>
+          </p>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer-copy">
+        <span class="footer-created">&copy;</span>
+        <p class="footer-name">
+          Example created by: <span>Juan Herrera Wamparo.</span>
+        </p>
+      </div>
+    </footer>
+  </main>
+
+  <script type="module" src="../../app.js"></script>
+  <script type="module" src="./register.js"></script>
+</body>
+</html>

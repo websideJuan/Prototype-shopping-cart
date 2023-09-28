@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carrito de compras: main page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+
+    <main class="main">
+      <nav class="nav">
+        <div class="nav-absolute">
+          <div class="nav-items">
+            <ul class="nav-item">
+              <li style="display: flex; align-items: center; gap: .5rem;">
+                <i class="fa-solid fa-bars-staggered fa-xl"></i>
+                <a href="#">Category</a>
+              </li>
+            </ul>
+
+            <div class="address">
+              <i class="fa-solid fa-truck-fast fa-xl"></i>
+              <a href="#" class="cta cta-address">Simulate sent</a>
+            </div>
+
+            <div class="simulate-content">
+              <div class="simulator">
+
+                <div class="info-container">
+                  <div class="info">
+                    <p>
+                      Este es un mensaje, necesito ver que mensaje.
+                    </p>
+                  </div>
+                </div>
+
+                <form>
+                  <div class="form-group">
+                    <label>
+                      Enter your full address
+                    </label>
+                    <input type="text" name="address" placeholder="Psje san loyola, Puerto Mont"/>
+                  </div>
+
+                  <div class="form-group">
+                    <label>
+                      Number
+                    </label>
+                    <input type="text" name="number" placeholder="Dpto 1220, piso 10..."/>
+                  </div>
+
+                  <div class="form-group">
+                    <label>
+                      Especial indication.
+                    </label>
+                    <textarea name="Descript" placeholder="El acceso esta por calle..."></textarea>
+                  </div>
+
+                  <div class="form-group">
+                    <label>
+                      Depto / oficina / piso
+                    </label>
+                    <input type="text" name="type" placeholder="Dpto 1220, piso 10..."/>
+                  </div>
+
+                  <button type="submit" class="btn btn-address">Consult</button>
+                </form>
+
+                <div class="simulator-result">
+                  <div class="result">
+                    <h1>Your coste: $</h1>
+                    <p class="total-coste">0</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            
+            <div class="userSession address" style="margin-left: 0;">
+              <i class="fa-regular fa-user fa-xl"></i>
+              <a href="./html/registerPage/register.html" class="cta cta-userSession">Register</a>
+            </div>
+
+            <div class="cart">
+              <p class="cart-content" data-content="0">0</p>
+
+              <a href="#" class="cart-icon">
+                <i class="fa-solid fa-bag-shopping fa-xl"></i>
+              </a>
+            </div>
+            
+            <div class="cart-items">
+              <table class="cart-table">
+                <thead class="cart-head">
+                  <tr>
+                    <th>
+                      <h2>Cart</h2>
+                    </th>
+                    <th>
+                      <a href="#" class="cart-close">
+                        <i class="fa-solid fa-xmark fa-xl"></i>
+                      </a>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody class="cart-render">
+                  <tr>
+                    <th>
+                      <h3>Your cart is empty</h3>
+                      <div class="cart-empty">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                        <a href="#" class="btn btn-cart-empty">Go shopping!</a>
+                      </div>
+                    </th>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr class="buttons-cart">
+                    <td>
+                      <a href="#" class="btn btn-cart delete">Vaciar carrito</a>
+                    </td>
+                    <td>
+                      <a href="./html/boleta.html" class="btn btn-cart post">Terminar la compra</a>
+                    </td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <header class="header">
+        <p>
+          <a href="#">Productos </a>/
+          <a href="#">Catalogo de productos</a>
+        </p>
+      </header>
+      <main class="main-body">
+        <div class="banner-shop">
+          <div class="banner">
+            <div class="banner-img">
+              <a href="#">
+                <img src="./image/banner-hero.png" alt="banner for info" class="image-banner">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="container-products">
+          <article class="card-products">
+            <header class="card-header">
+              <h5>Mochila</h5>
+            </header>
+            <main class="card-body">
+              <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg" alt="product 1">
+              <p>$ <span>4000</span></p>
+            </main>
+            <footer class="card-footer">
+              <a href="#" class="btn btn-product" data-id="1">
+                <i class="fa-solid fa-plus"></i>
+                Shop
+              </a>
+            </footer>
+          </article>
+
+          <article class="card-products">
+            <header class="card-header">
+              <h5>Camiseta BW-30</h5>
+            </header>
+            <main class="card-body">
+              <img src="https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg" alt="product 2">
+              <p>$ <span>9000</span></p>
+            </main>
+            <footer class="card-footer">
+              <a href="#" class="btn btn-product" data-id="2">
+                <i class="fa-solid fa-plus"></i>
+                Shop
+              </a>
+            </footer>
+          </article>
+
+          <article class="card-products">
+            <header class="card-header">
+              <h5>Chaqueta HT-005</h5>
+            </header>
+            <main class="card-body">
+              <img src="https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg" alt="product 3">
+              <p>$ <span>19000</span></p>
+            </main>
+            <footer class="card-footer">
+              <a href="#" class="btn btn-product" data-id="3">
+                <i class="fa-solid fa-plus"></i>
+                Shop
+              </a>
+            </footer>
+          </article>
+
+          <article class="card-products">
+            <header class="card-header">
+              <h5>Polera dry fit N</h5>
+            </header>
+            <main class="card-body">
+              <img src="https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg" alt="product 4">
+              <p>$ <span>35400</span></p>
+            </main>
+            <footer class="card-footer">
+              <a href="#" class="btn btn-product" data-id="4">
+                <i class="fa-solid fa-plus"></i>
+                Shop
+              </a>
+            </footer>
+          </article>
+
+          <article class="card-products">
+            <header class="card-header">
+              <h5>Pulsera Plata 55K</h5>
+            </header>
+            <main class="card-body">
+              <img src="https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg" alt="product 5">
+              <p>$ <span>190000</span></p>
+            </main>
+            <footer class="card-footer">
+              <a href="#" class="btn btn-product" data-id="5">
+                <i class="fa-solid fa-plus"></i>
+                Shop
+              </a>
+            </footer>
+          </article>
+
+          <article class="card-products">
+            <header class="card-header">
+              <h5>Pulsera IMT-92</h5>
+            </header>
+            <main class="card-body">
+              <img src="https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg" alt="product 6">
+              <p>$ <span>60000</span></p>
+            </main>
+            <footer class="card-footer">
+              <a href="#" class="btn btn-product" data-id="6">
+                <i class="fa-solid fa-plus"></i>
+                Shop
+              </a>
+            </footer>
+          </article>
+
+          <article class="card-products">
+            <header class="card-header">
+              <h5>Anillo PW-003</h5>
+            </header>
+            <main class="card-body">
+              <img src="https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_.jpg" alt="product 7">
+              <p>$ <span>129900</span></p>
+            </main>
+            <footer class="card-footer">
+              <a href="#" class="btn btn-product" data-id="7">
+                <i class="fa-solid fa-plus"></i>
+                Shop
+              </a>
+            </footer>
+          </article>
+
+          <article class="card-products">
+            <header class="card-header">
+              <h5>Fantasias Cobre MB-09</h5>
+            </header>
+            <main class="card-body">
+              <img src="https://fakestoreapi.com/img/51UDEzMJVpL._AC_UL640_QL65_ML3_.jpg" alt="product 8">
+              <p>$ <span>20000</span></p>
+            </main>
+            <footer class="card-footer">
+              <a href="#" class="btn btn-product" data-id="8">
+                <i class="fa-solid fa-plus"></i>
+                Shop
+              </a>
+            </footer>
+          </article>
+
+          <article class="card-products">
+            <header class="card-header">
+              <h5>Disco duro externo</h5>
+            </header>
+            <main class="card-body">
+              <img src="https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg" alt="product 9">
+              <p>$ <span>30000</span></p>
+            </main>
+            <footer class="card-footer">
+              <a href="#" class="btn btn-product" data-id="9">
+                <i class="fa-solid fa-plus"></i>
+                Shop
+              </a>
+            </footer>
+          </article>
+
+          <article class="card-products">
+            <header class="card-header">
+              <h5>Disco duro externo</h5>
+            </header>
+            <main class="card-body">
+              <img src="https://fakestoreapi.com/img/81XH0e8fefL._AC_UY879_.jpg" alt="product 9">
+              <p>$ <span>30000</span></p>
+            </main>
+            <footer class="card-footer">
+              <a href="#" class="btn btn-product" data-id="9">
+                <i class="fa-solid fa-plus"></i>
+                Shop
+              </a>
+            </footer>
+          </article>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="footer-copy">
+          <span class="footer-created">&copy;</span>
+          <p class="footer-name">
+            Example created by: <span>Juan Herrera Wamparo.</span>
+          </p>
+        </div>
+      </footer>
+    </main>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

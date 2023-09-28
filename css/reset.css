@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+}
+
+:root {
+  --color-one: white;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: white;
+}
+
+h1,h2,h3,
+h4,h5,h6 {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-one);
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: 'Heebo', sans-serif;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  font-family: inherit;
+  border: 0px;
+}
+
+textarea {
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.btn {
+  background-color: blue;
+  width: 100%;
+  border-radius: 2rem;
+  display: block;
+  text-align: center;
+  border: 0;
+}
