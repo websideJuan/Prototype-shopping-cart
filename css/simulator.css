@@ -46,6 +46,7 @@
   border-radius: .5rem;
   padding: 1rem;
   backdrop-filter: blur(10px);
+  color: var(--black);
 }
 
 .info p {

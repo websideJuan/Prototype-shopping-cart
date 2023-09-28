@@ -7,6 +7,27 @@
   gap: 2.5rem;
 }
 
+.title-products {
+  grid-column: 1 / 5;
+  color: var(--black);
+  text-align: center;
+}
+
+.title-products .title {
+  font-size: 3.5rem;
+  font-weight: 400;
+}
+
+.title-products .subtitle {
+  font-size: 2.2rem;
+  font-weight: 300;
+}
+
+.subtitle .subtitle-sale {
+  font-weight: 700;
+  font-size: 2.2rem;
+}
+
 .card-products {
   color: black;
   box-shadow: 0 0 10px rgba(128, 128, 128, 0.1);
