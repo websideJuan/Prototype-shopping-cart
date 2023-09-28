@@ -13,6 +13,7 @@ export default class Cart {
     const renderCarrito = document.querySelector('.cart-render')
     const cartContent = document.querySelector('.cart-content')
 
+    renderCarrito.innerHTML = ''
     products.forEach(product => {
       const row = document.createElement('tr')
 

@@ -1,7 +1,6 @@
 import Cart from "./views/cart.js";
 
 const cart = new Cart()
-
 const navegation = document.querySelector('.nav-items')
 const buttonBtn = document.querySelector('.delete')
 const products = document.querySelector('.container-products')
