@@ -5,6 +5,37 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2.5rem;
+  position: relative;
+}
+
+.pannel {
+  position: absolute;
+  inset: 0;
+  top: 20%;
+  left: -20px;
+  right: -20px;
+  pointer-events: none;
+}
+
+.pannel-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.button {
+  pointer-events: all;
+  width: 40px;
+  height: 40px;
+  border-radius: 99px;
+  border: 0;
+  color: var(--blue);
+  font-size: 2.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .title-products {
